@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+
+
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+}
+
+
+.brand-container {
+    display: flex;
+    flex-direction: column;
+    width: 788px;
+    height: 800px;
+    flex-shrink: 0;
+    padding: 64px 0 0 165px;
+    margin-top: 136px;
+}
+
+.logo-container{
+    position: relative;
+    right: 619px;
+    top:69px;
+    width: 158px;
+    height: 33px;
+    flex-shrink: 0;
+}
+    
+    
+
+/*MAIN TITLE*/
+h1 {
+    color: #CE9898;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    /* 100% */
+    letter-spacing: 17.321px;
+}
+
+.black-title {
+    color: #423A3A;
+    font-weight: 600;
+    line-height: 71px;
+    /* 110.938% */
+    margin-bottom: 32px;
+
+}
+
+/*PARAGRAPH SECTION*/
+
+p {
+    color: #CE9898;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    width: 444px;
+}
+
+/*EMAIL SUBMIT SECTION*/
+
+#user-email {
+    width: 445px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 1px solid #CE9898;
+    opacity: 0.5;
+    outline: none;
+    /*Prevents the defualt color to appear whenever clicked on*/
+    padding-left: 32px;
+}
+
+
+
+
+input::placeholder {
+    color: #CE9898;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    opacity: 0.5;
+}
+
+.email-submit {
+    display: flex;
+    margin-top: 20px;
+    height: 56px;
+    width: 300px;
+}
+
+#submitBtn {
+    border: none;
+    background: transparent;
+    position: relative;
+    right: 126px;
+    bottom: 7px;
+    width: 100px;
+}
+
+/*ERROR ICONS*/
+
+#alertText {
+    display: none;
+    color: #F96464;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 215.385% */
+    padding-left: 32px;
+    position: relative;
+    bottom: 20px;
+}
+
+#errorImg {
+    display: none;
+    position: relative;
+    left: 305px;
+    bottom: 40px;
+}
+
+@media (max-width: 900px) and (min-width:375px) {
+    body {
+        max-width: 50%;
+        margin: 0;
+    }
+
+    .container-fluid {
+        display: block;
+       margin-bottom: 00px;
+    }
+
+    .img-grl {
+        content: url(../images/hero-mobile.jpg);
+        padding-top: 100px;
+        width: 269%;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 30px;
+        top: 30px;
+    }
+
+    .brand-container {
+        width: 100%; /* Adjust the width to take the full width */
+        height: auto; /* Adjust the height to auto */
+        margin-top: 100px;
+        position: absolute; /* Add absolute positioning to center .brand-container */
+        left: 50%; /* Move .brand-container 50% to the left */
+        transform: translateX(-50%); /* Center .brand-container horizontally */
+        padding:0 30px;
+    
+    }
+   
+
+    .brand-container .brand-text{
+        text-align: center;
+        margin-left: 60px;
+
+
+    }
+
+    h1 {
+        font-family: Josefin Sans;
+        font-size: 40px;
+        font-style: normal;
+        /* 105% */
+        letter-spacing: 10.825px;
+        margin-bottom: 0;
+        margin-left: 40px;
+    }
+
+    .black-title,
+    .colored-title {
+        line-height: 42px;
+
+    }
+
+    p {
+        width: 311px; /* Use max-width instead of width */
+        font-size: 14px;
+        margin: 0 auto; /* Center the text within .brand-text */
+        line-height: 22px;
+    }
+
+    .attribution{
+        margin: 0;
+        padding-top: 500px;
+    }
+
+}
+
+
+@media (max-width:1920px) and (min-width:1536px) {
+
+    .container-fluid{
+        justify-content: space-evenly;
+    }
+    .img-grl{
+        width: 120%;
+    padding-right: 50px;
+    }
+
+    .logo-container{
+        right:699px;
+    }
+}
