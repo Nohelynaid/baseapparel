@@ -134,7 +134,7 @@ input::placeholder {
     bottom: 40px;
 }
 
-@media (max-width: 800px) and (min-width:365px) {
+@media (max-width: 800px)  {
     body {
         max-width: 50%;
         margin: 0;
