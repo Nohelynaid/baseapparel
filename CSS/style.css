@@ -207,7 +207,7 @@ input::placeholder {
 }
 
 
-@media (max-width:1920px) and (min-width:1536px) {
+@media (max-width:1920px) and (min-width:1600px) {
 
     .container-fluid{
         justify-content: space-evenly;
