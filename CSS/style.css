@@ -6,13 +6,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
-
+    width: 100%;
 
 }
 
 .container-fluid {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: nowrap;
     padding: 0;
 }
 
@@ -23,20 +24,20 @@ body {
     width: 788px;
     height: 800px;
     flex-shrink: 0;
-    padding: 64px 0 0 165px;
+    padding: 90px 0 0 165px;
     margin-top: 136px;
 }
 
-.logo-container{
+.logo-container {
     position: relative;
     right: 619px;
-    top:69px;
+    top: 49px;
     width: 158px;
     height: 33px;
-    flex-shrink: 0;
+    
 }
-    
-    
+
+
 
 /*MAIN TITLE*/
 h1 {
@@ -112,7 +113,10 @@ input::placeholder {
     width: 100px;
 }
 
-/*ERROR ICONS*/
+
+/*ERROR ICONS
+
+*/
 
 #alertText {
     display: none;
@@ -134,90 +138,155 @@ input::placeholder {
     bottom: 40px;
 }
 
-@media (max-width: 800px)  {
+@media (max-width: 800px) {
+
     body {
-        max-width: 50%;
-        margin: 0;
+        max-width: 100%;
+        /* Adjust to take full width */
     }
 
     .container-fluid {
         display: block;
-       margin-bottom: 00px;
+
     }
 
     .img-grl {
+        height: auto;
+        display: block;
         content: url(../images/hero-mobile.jpg);
-        padding-top: 100px;
-        width: 269%;
+        padding-top: 80px;
+
     }
 
     .logo-container {
-        position: absolute;
+        position: relative;
         left: 30px;
-        top: 30px;
+        bottom: 340px;
+        top: auto;
+        padding-top: 30px;
+    }
+
+    .logo[width="158"]{
+        width: 108px;
     }
 
     .brand-container {
-        width: 100%; /* Adjust the width to take the full width */
-        height: auto; /* Adjust the height to auto */
-        margin-top: 100px;
-        position: absolute; /* Add absolute positioning to center .brand-container */
-        left: 50%; /* Move .brand-container 50% to the left */
-        transform: translateX(-50%); /* Center .brand-container horizontally */
-        padding:0 30px;
-    
+        top: 230px;
+        display: block;
+        width: 0;
+        padding: 0;
+        margin-top: auto;
+
     }
-   
 
-    .brand-container .brand-text{
-        text-align: center;
-        margin-left: 60px;
-
-
+    .brand-container .brand-text {
+        width: 200px;
     }
 
     h1 {
-        font-family: Josefin Sans;
-        font-size: 40px;
+        font-size: 30px;
         font-style: normal;
-        /* 105% */
         letter-spacing: 10.825px;
         margin-bottom: 0;
-        margin-left: 40px;
+
     }
 
-    .black-title,
-    .colored-title {
+
+    .colored-title,
+    .black-title {
         line-height: 42px;
-
+        position: relative;
+        font-size: 40px;
     }
+
+    .colored-title {
+        left: 95px;
+    }
+
+    .black-title {
+        margin-bottom: 15px;
+        text-align: center;
+        left: 65px;
+    }
+
+    .black-title strong {
+        line-height: 1; /* Adjust the line-height to center "soon" */
+        display: inline-block; /* Make "soon" inline-block for horizontal centering */
+    }
+
 
     p {
-        width: 311px; /* Use max-width instead of width */
+        max-width: 311px;
+        /* Use max-width instead of width */
         font-size: 14px;
-        margin: 0 auto; /* Center the text within .brand-text */
+        margin-left: 30px;
+        /* Center the text within .brand-text */
         line-height: 22px;
+        text-align: center;
     }
 
-    .attribution{
-        margin: 0;
-        padding-top: 500px;
+    #user-email {
+        width: 311px;
+        height: 48px;
+        margin-left: 25px;
     }
 
+    .email-submit {
+        display: block;
+        width: 310px;
+        margin-top: 30px;
+    }
+
+
+    #errorImg {
+        left: 235px;
+        bottom: 43px;
+    }
+
+    #alertText {
+        padding-left: 0;
+        padding-right: 90px;
+       
+    }
+
+    #btn {
+        position: relative;
+        left: 320px;
+        bottom: 47.5px;
+
+    }
+
+    .arrow-img {
+        position: relative;
+        right: 20px;
+    }
+
+    rect[width="100"] {
+        width: 70px;
+    }
+
+    rect[height="56"] {
+        height: 48px;
+    }
+
+    
+
+    .attribution {
+        padding-top: 380px;
+    }
 }
 
-
-@media (max-width:1920px) and (min-width:1600px) {
-
-    .container-fluid{
+@media (max-width: 1920px) and (min-width: 1600px) {
+    .container-fluid {
         justify-content: space-evenly;
     }
-    .img-grl{
+
+    .img-grl {
         width: 120%;
-    padding-right: 50px;
+        padding-right: 50px;
     }
 
-    .logo-container{
-        right:699px;
+    .logo-container {
+        right: 699px;
     }
 }
