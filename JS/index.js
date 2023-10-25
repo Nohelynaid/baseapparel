@@ -55,7 +55,7 @@ function updateSvg() {
     const btnRec = document.getElementById('btn')
 
     if (window.matchMedia("(max-width: 800px)").matches) {
-      arrowPath.setAttribute('d', 'M51 21L59.8357 29.8357 51 38.6713');
+      arrowPath.setAttribute('d', 'M53 21L61.8357 29.8357 53 38.6713');
       btnRec.setAttribute('viewBox', '-50 0 140 96');
     } else {
       arrowPath.setAttribute('d', 'M66 24L74.8357 32.8357 66 41.6713');
