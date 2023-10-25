@@ -48,4 +48,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // When the user modifies the email input, reset the form
     userEmail.addEventListener('input', resetForm);
+
+    // Function to update the arrow path
+function updateSvg() {
+    const arrowPath = document.getElementById('arrowPath');
+    const btnRec = document.getElementById('btn')
+
+    if (window.matchMedia("(max-width: 800px)").matches) {
+      arrowPath.setAttribute('d', 'M51 21L59.8357 29.8357 51 38.6713');
+      btnRec.setAttribute('viewBox', '-50 0 140 96');
+    } else {
+      arrowPath.setAttribute('d', 'M66 24L74.8357 32.8357 66 41.6713');
+      btnRec.setAttribute('viewBox', '0 0 140 96')
+    }
+  }
+  
+  // Call the function when the page loads and when the window resizes
+  window.addEventListener('load', updateSvg);
+  window.addEventListener('resize', updateSvg);
+  
+
+   
+      
 });
