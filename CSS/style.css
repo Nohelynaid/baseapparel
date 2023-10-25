@@ -155,6 +155,7 @@ input::placeholder {
         display: block;
         content: url(../images/hero-mobile.jpg);
         padding-top: 80px;
+        width:100%;
 
     }
 
