@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -28,7 +28,7 @@
   <div class="container-fluid">
 
     <div class="img">
-      <img class="img-grl" src="images/hero-desktop.jpg" alt="girl-img">
+      <img class="img-grl" src="../BASE/images/hero-desktop.jpg" alt="girl-img">
     </div>
     <div class="logo-container">
       <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="158" height="34" viewBox="0 0 158 34" fill="none">
@@ -63,9 +63,9 @@
           <button id="submitBtn">
             <svg id="btn" xmlns="http://www.w3.org/2000/svg" width="140" height="96" viewBox="0 0 140 96" fill="none">
               <g filter="url(#filter0_d_0_200)">
-                <rect x="20" y="5" width="100" height="56" rx="28" fill="url(#paint0_linear_0_200)" />
+                <rect class="btn-rec" x="20" y="5" width="100" height="56" rx="28" fill="url(#paint0_linear_0_200)" />
               </g>
-              <path d="M66 24L74.8357 32.8357L66 41.6713" stroke="white" stroke-width="2" />
+              <path id="arrowPath" d="M66 24L74.8357 32.8357L66 41.6713" stroke="white" stroke-width="2" />
               <defs>
                 <filter id="filter0_d_0_200" x="0" y="0" width="140" height="96" filterUnits="userSpaceOnUse"
                   color-interpolation-filters="sRGB">
@@ -99,16 +99,13 @@
         <p id="alertText">Please provide a valid email</p>
       </div>
     </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Nohely Pasoz</a>.
+      </p>
+    </footer>
   </div>
-
-
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Nohely Pasoz</a>.
-    </p>
-  </footer>
 </body>
 
 </html>
