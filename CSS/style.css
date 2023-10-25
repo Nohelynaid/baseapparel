@@ -24,13 +24,13 @@ body {
     width: 788px;
     height: 800px;
     flex-shrink: 0;
-    padding: 90px 0 0 165px;
+    padding: 90px 0 0 200px;
     margin-top: 136px;
 }
 
 .logo-container {
     position: relative;
-    right: 619px;
+    right: 589px;
     top: 49px;
     width: 158px;
     height: 33px;
